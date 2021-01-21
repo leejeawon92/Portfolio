@@ -185,6 +185,10 @@
   border: 2px solid var(--color-white);
   border-radius: var(--size-border-radius);
 }
+
+.home__contact:hover {
+  background-color: var(--color-dark-white);
+}
 /* ================================================== */
 /* Section Common */
 
