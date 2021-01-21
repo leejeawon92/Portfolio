@@ -499,3 +499,26 @@
     flex-grow: 1;
   }
 }
+/* ================================================== */
+/* Arrow up  */
+
+.arrow-up{
+  position: fixed;
+  bottom: 50px;
+  right: 20px;
+  width: 60px;
+  height: 60px;
+  font-size: 50px;
+
+  background-color: var(--color-pink);
+  color: var(--color-white);
+  border-radius: 50%;
+  opacity: 0;
+  pointer-events: none;
+}
+
+.arrow-up.visible {
+  opacity: 1;
+  pointer-events: auto;
+
+}
