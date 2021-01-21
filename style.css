@@ -106,8 +106,10 @@
 
   background-color: transparent;
   position: fixed;
+  height: 60px;
   width: 100%;
   transition: all var(--animation-duration) ease-in;
+  z-index: 1;
 }
 
 #navbar.navbar--dark{
@@ -119,6 +121,7 @@
   font-size: var(--font-medium);
   font-weight: var(--weight-semi-bold);
   color: white;
+  padding: 0 10px;
 }
 
 .navbar__menu {
@@ -473,6 +476,7 @@
     flex-direction: column;
     text-align: center;
     width: 100%;
+    display: none;
     
   }
 
