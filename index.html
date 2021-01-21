@@ -166,35 +166,43 @@
             <h1>My work</h1>
             <h3>Projects</h3>
             <div class="work__categories">
-                <button class="category_btn active">All <span class="category__count">6</span></button>
-                <button class="category_btn">HTML <span class="category__count">2</span></button>
-                <button class="category_btn">CSS <span class="category__count">2</span></button>
-                <button class="category_btn">JavaScript <span class="category__count">2</span></button>
-                <button class="category_btn">React <span class="category__count">1</span></button>
+                <button class="category_btn active" data-fillter="*">All <span class="category__count">6</span></button>
+                <button class="category_btn" data-fillter="html">HTML <span class="category__count">2</span></button>
+                <button class="category_btn" data-fillter="css">CSS <span class="category__count">2</span></button>
+                <button class="category_btn" data-fillter="javascript">JavaScript <span class="category__count">2</span></button>
+                <button class="category_btn" data-fillter="React">React <span class="category__count">1</span></button>
             </div>
     
             <div class="work__projects">
-                <a href="https://github.com/LeeJeaWon/youtube" class="project" target="blank">
+                <a href="https://github.com/LeeJeaWon/youtube" class="project" target="blank" data-type="html">
                     <img class="project__img" src="imgs/projects/youtube_clone.PNG" alt="Youtube" width="300" height="300">
                     <div class="project__description">
-                        <h3>Youtube site</h3>
-                        <span>Clone coding with nodeJS & MongoDB & HTML+CSS</span>
+                        <h3>HTML</h3>
+                        <span>HTML</span>
                     </div>
                 </a>
     
-                <a href="https://github.com/LeeJeaWon/youtube" class="project" target="blank">
+                <a href="https://github.com/LeeJeaWon/youtube" class="project" target="blank" data-type="css">
                     <img class="project__img" src="imgs/projects/youtube_clone.PNG" alt="Youtube" width="300" height="300">
                     <div class="project__description">
-                        <h3>Youtube site</h3>
-                        <span>Clone coding with nodeJS & MongoDB & HTML+CSS</span>
+                        <h3>CSS</h3>
+                        <span>CSS</span>
                     </div>
                 </a>
     
-                <a href="https://github.com/LeeJeaWon/youtube" class="project" target="blank">
+                <a href="https://github.com/LeeJeaWon/youtube" class="project" target="blank" data-type="javascript">
                     <img class="project__img" src="imgs/projects/youtube_clone.PNG" alt="Youtube" width="300" height="300">
                     <div class="project__description">
-                        <h3>Youtube site</h3>
-                        <span>Clone coding with nodeJS & MongoDB & HTML+CSS</span>
+                        <h3>JavaScript</h3>
+                        <span>JavaScript</span>
+                    </div>
+                </a>
+
+                <a href="https://github.com/LeeJeaWon/youtube" class="project" target="blank" data-type="React">
+                    <img class="project__img" src="imgs/projects/youtube_clone.PNG" alt="Youtube" width="300" height="300">
+                    <div class="project__description">
+                        <h3>React</h3>
+                        <span>React</span>
                     </div>
                 </a>
             </div>

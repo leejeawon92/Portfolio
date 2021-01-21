@@ -12,7 +12,7 @@ document.addEventListener('scroll', () => {
         navbar.classList.remove('navbar--dark');
     }
 });
-
+// =====================================================================================================
 // navbar item들 클릭했을때 scrolling
 const navbarMenu = document.querySelector('.navbar__menu');
 navbarMenu.addEventListener('click', (event) => {
@@ -26,7 +26,7 @@ navbarMenu.addEventListener('click', (event) => {
     scrollIntoView(link);
 })
 
-
+// =====================================================================================================
 // contact button클릭시 scroll
 const homeContactBtn = document.querySelector('.home__contact')
 homeContactBtn.addEventListener('click', () => {
@@ -37,7 +37,7 @@ function scrollIntoView(selector){
     const scrollTo = document.querySelector(selector);
     scrollTo.scrollIntoView();
 }
-
+// =====================================================================================================
 // scroll하면 Home 투명하게 
 const home = document.querySelector('.home__container');
 const homeHeight = home.getBoundingClientRect().height;
@@ -45,6 +45,7 @@ document.addEventListener('scroll', ()=> {
     home.style.opacity = 1 - window.scrollY / homeHeight   
 })
 
+// =====================================================================================================
 // arrow-up + scroll
 const arrowUp = document.querySelector('.arrow-up');
 document.addEventListener('scroll', () =>{
@@ -59,5 +60,25 @@ arrowUp.addEventListener('click', () => {
     scrollIntoView('#home');
 })
 
+// =====================================================================================================
+// Project
 
+const workBtnContainer = document.querySelector('.work__categories')
+const projectContainer = document.querySelector('.work__projects')
+const projects = document.querySelectorAll('.project')
 
+console.log(projects)
+
+workBtnContainer.addEventListener('click', (e) =>{
+    const filter = e.target.dataset.fillter || e.target.parentNode.dataset.fillter;
+    if(filter == null) { return; }
+    // console.log(filter)
+
+    projects.forEach((project) => {
+        if(filter ==='*' || filter === project.dataset.type) {
+            project.classList.remove('invisible');
+        } else {
+            project.classList.add('invisible');
+        }
+    })
+});
