@@ -22,8 +22,16 @@ navbarMenu.addEventListener('click', (event) => {
     if(link == null){
         return;
     }
-
+    navbarMenu.classList.remove('open');   
     scrollIntoView(link);
+})
+
+// =====================================================================================================
+// Navbar toggle button
+const navbarToggleBtn = document.querySelector('.navbar__toggle-btn');
+
+navbarToggleBtn.addEventListener('click', ()=> {
+    navbarMenu.classList.toggle('open');   
 })
 
 // =====================================================================================================
@@ -37,6 +45,8 @@ function scrollIntoView(selector){
     const scrollTo = document.querySelector(selector);
     scrollTo.scrollIntoView();
 }
+
+
 // =====================================================================================================
 // scroll하면 Home 투명하게 
 const home = document.querySelector('.home__container');
@@ -67,13 +77,16 @@ const workBtnContainer = document.querySelector('.work__categories')
 const projectContainer = document.querySelector('.work__projects')
 const projects = document.querySelectorAll('.project')
 
-console.log(projects)
 
 workBtnContainer.addEventListener('click', (e) =>{
     const filter = e.target.dataset.fillter || e.target.parentNode.dataset.fillter;
     if(filter == null) { return; }
 
+    const active = document.querySelector('.category_btn.selected')
+    active.classList.remove('selected')
 
+    const target = e.target.nodeName === 'BUTTON'?e.target:e.target.parentNode;
+    target.classList.add('selected')  
 
     projectContainer.classList.add('anim-out')
     setTimeout(() => {
@@ -84,8 +97,9 @@ workBtnContainer.addEventListener('click', (e) =>{
                 project.classList.add('invisible');
             }
         })
-        
+
         projectContainer.classList.remove('anim-out')
     }, 300)
     
 });
+
