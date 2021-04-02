@@ -343,7 +343,7 @@ p {
   border-radius: var(--size-border-radius);
   font-size: var(--font-regular);
   padding: 8px 40px;
-  width: 200px;
+  width: 250px;
 }
 
 .category_btn.selected,
