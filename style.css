@@ -93,6 +93,7 @@ p {
   font-weight: var(--font-regular);
   color: var(--color-black);
   margin: 4px 0;
+  line-height: 1.8;
 }
 /* ================================================== */
 /* Navbar */
