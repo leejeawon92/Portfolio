@@ -281,12 +281,13 @@ p {
 
 .skillset__title {
   color: var(--color-white);
-  margin: 0;
+  margin-bottom: 30px;
 }
 
 .skill_description {
   display: flex;
   justify-content: space-between;
+  font-size: var(--font-regular);
 }
 
 .skill {
@@ -304,14 +305,21 @@ p {
   background-color: var(--color-orange);
 }
 
+.skill__explanation{
+  margin: 15px;
+  line-height: 1.8;
+  
+}
+
 .skillset__left {
-  flex-basis: 60%;
+  flex-basis: 50%;
   background-color: var(--color-dark-grey);
   padding: 20px 40px;
 }
 
 .skillset__right {
-  flex-basis: 40%;
+  flex-basis: 50%;
+  padding: 20px;
 }
 
 .tools {
