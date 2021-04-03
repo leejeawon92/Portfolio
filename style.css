@@ -265,6 +265,48 @@ p {
   font-size: var(--font-micro);
 }
 
+.about__education {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 50px;
+}
+
+.school__btn {
+  display: flex;
+  font-size: var(--font-regular);
+  border: 1px solid var(--color-dark-white);
+  border-radius: var(--size-border-radius);
+  padding: 20px;
+  margin: 5px;
+}
+
+.school__btn__left {
+  display: flex;
+  flex-direction: column;
+  justify-content: left;
+  margin-right: 50px;
+  flex-basis: 20%;
+}
+
+.school__btn-status {
+  font-size: var(--font-micro);
+}
+
+.school__btn__right {
+  display: flex;
+}
+
+.school__btn-department {
+  margin-left: 10px;
+  font-size: 13px;
+  color: var(--color-light-grey);
+  vertical-align: bottom;
+}
+
+.school__btn:hover {
+  background-color: var(--color-pink);
+}
+
 /* ================================================== */
 /* Skills */
 
