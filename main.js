@@ -143,6 +143,7 @@ const observerOptions = {
 
 const observerCallback = (entries, observer) => {
     entries.forEach(entry=>{
+        console.log(entry);
         if(!entry.isIntersecting && entry.intersectionRatio >0) { //스크롤을 위로 올렸을때()
             const index = sectionIds.indexOf(`#${entry.target.id}`)
 
