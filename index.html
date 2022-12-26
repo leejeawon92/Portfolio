@@ -6,10 +6,12 @@
     <title>JeaWon Lee</title>
     <meta name="description" content="Portfolio for world-renowned software engineer JW">
     <meta name="author" content="JW">
-    <script src="https://kit.fontawesome.com/6563fc787e.js" crossorigin="anonymous"></script>
+    <script src="https://kit.fontawesome.com/8e5c285fda.js" crossorigin="anonymous"></script>
     <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;600&display=swap" rel="stylesheet">
     <link rel="icon" type="image/png" href="imgs/행성_icon.png" sizes="192x192">
     <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://unpkg.com/aos@2.3.1/dist/aos.css">
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
     <script src="main.js" defer></script>
 </head>
 
@@ -44,7 +46,7 @@
     <section id="home">
         <div class="home__container">
             <img src="imgs/프로필사진.jpg" alt="profile photo" class="home__avatar">
-            <h1 class="home__title">안녕하십니까 <br>Front-end 개발자 이재원입니다.</h1>
+            <h1 class="home__title"> Web Front-end developer <br> 이재원입니다.</h1>
             <h2 class="home__description">Front-end와 Back-end를 넘나드는 개발자</h2>
             <button class="home__contact">Contact Me</button>
         </div>
@@ -54,52 +56,78 @@
     <!-- About -->
     <section id="about" class="section section__container">
         <h1>About Me</h1>
-        <p>
-            <!-- 나를 어필할 수 있는 문장을 2~3줄정도 적는다 -->
-            Network Engineer로써 고객사 infra를 관리하며 네트워크장비를 운영및 유지보수하는 업무를 해왔습니다.
-            반복되는 유지보수와 비슷비슷한 트러블슈팅을 하면서, 문득 <strong>생산적이고 창의적인</strong> 일을 하고 싶다는 생각이 들었습니다.
-            내가 생각한 것을 구현할 수도 있고, 구현한 것을 실생활에 적용도 해보는 그런 업무가 무엇이 있을까하다가 코딩을 제대로 해보자 마음먹게 되었습니다. 회사업무 틈틈히 퇴근후 새벽까지 주말내내 코딩을 붙잡고 열심히 공부하였습니다.
-        </p>
-
-        <div class="about__majors">
-            <div class="major">
-                <div class="major__icon"><i class="fab fa-html5"></i></div>
-                <h2 class="major__title">HTML</h2>
-                <div class="major__description">  </div>
-            </div>
-            <div class="major">
-                <div class="major__icon"><i class="fab fa-css3"></i></div>
-                <h2 class="major__title">CSS</h2>
-                <div class="major__description"> </div>
-            </div>
-            <div class="major">
-                <div class="major__icon"><i class="fab fa-js"></i></div>
-                <h2 class="major__title">JavaScript</h2>
-                <div class="major__description"><br></div>
-            </div>
-            <div class="major">
-                <div class="major__icon"><i class="fab fa-react"></i></div>
-                <h2 class="major__title">React</h2>
-                <div class="major__description"> <br></div>
-            </div>
-            <div class="major">
-                <div class="major__icon"><i class="fab fa-chrome"></i></div>
-                <h2 class="major__title">Web APIs</h2>
-                <div class="major__description"> <br></div>
-            </div>
+        <div data-aos="fade-right">
+            <!-- 1. 엔지니어에서 개발자로 온 이유 + 내가 한 업무 살짝 정리  -->
+            <p>
+                Engineer로써 고객사에 임대(구매)한 네트워크(보인)장비를 운영 및 유지보수를 하면서 고객사 infra도 같이 관리하는 업무를 하였습니다.
+                고객사에서 발생하는 네트워크트래픽을 관리하고 자사 방화벽 rule을 업데이트하고 또한 고객사 infra를 안정적으로 유지시키면서 외부공격으로부터 보호하는 업무도 수행했습니다. 
+                반복되는 유지보수와 비슷비슷한 트러블슈팅을 하면서, 문득 <span class="abouttext1">생산적이고 창의적인</span> 일을 하고 싶다는 생각이 들었습니다.
+                내가 생각한 것을 구현할 수도 있고, 구현한 것을 실생활에 적용도 해보는 그런 일이 무엇이 있을까하다가 코딩을 제대로 배워보자 마음먹게 되었습니다.
+            </p>
+        </div>
+        <br>
+        <div data-aos="fade-left">
+            <p>
+                코딩에 입문하기 앞서 "무엇을 만들고 싶을까?" 라는 질문을 던졌고, <span class="abouttext2">"나만의 웹사이트, 나만의 서버"</span>를 구축해보고 싶다는 생각을 가지게 되었습니다
+                처음으로 HTML, CSS를 통해 카카오톡화면을 구현해보았고, 다음으로 Javascript를 추가하여 포트폴리오웹사이트를 구축해보았습니다.
+                그리고 React라는 프레임워크를 활용하여 넷플릭스 웹애플리케이션을 구축해보기도 하였습니다. 
+                추가적으로 javascript로 서버를 구축할 수 있는 nodejs를 활용하여 Youtube웹애플리케이션도 구축해보았습니다. 
+            </p>
         </div>
 
+        <br>
+        <div data-aos="fade-right">
+            <p>
+                <!-- 2. 어떠한 개발자가 되고 싶은지에 대한 포부 -->
+                <span class="abouttext3">Web Developer라는 도메인 안에서 여러가지의 서비스을 경험하고 구현하면서 조금 더 재미있는, 만들고싶은 분야로 확장해 나가면서
+                프론트앤드라는 분야 뿐만 아니라 백엔드까지도 확장하여 풀스택개발자가 될 수 있도록 노력하며 성장해 나가는 것이 저의 목표입니다. </span>
+            </p>
+        </div>
+        <br>
+
+        <div class="about__education" >
+            <button class="school__btn" data-aos="flip-up" data-aos-delay="500"> 
+                <div class="school__btn__left">
+                    <span class="school__btn-year">2019.03 ~</span>
+                    <span class="school__btn-status">재학중</span>
+                </div>
+                <div class="school__btn__right" >
+                    <h4 class="school__btn-name">아주대학교 대학원(석사)</h4>
+                    <h5 class="school__btn-department">사이버보안학과</h5>
+                </div>
+            </button>
+
+            <button class="school__btn" data-aos="flip-up" data-aos-delay="700">
+                <div class="school__btn__left">
+                    <span class="school__btn-year">2011.03 ~ 2015.02</span>
+                    <span class="school__btn-status">졸업</span>
+                </div>
+                <div class="school__btn__right">
+                    <h4 class="school__btn-name">수원과학대</h4>
+                    <h5 class="school__btn-department">증권금융학과</h5>
+                </div>
+            </button>
+            
+            <!-- <button class="school__btn">
+                <div class="school__btn__left">
+                    <span class="school__btn-year">2011</span>
+                    <span class="school__btn-status">졸업</span>
+                </div>
+                <div class="school__btn__right">
+                    <h4 class="school__btn-name">능곡고등학교</h4>
+                </div>
+            </button> -->
+        </div>
 
         <div class="about__jobs">
             <div class="job">
                 <img src="imgs/conbuzz_logo.PNG" alt="conbuzznet" class="job__logo" width="100" height="50">
                 <div class="job__description">
-                    <p class="job__name">Conbuzznetwork - Network engineer</p>
-                    <p class="job__period">2017 3月 ~ 2021 (재직중) </p>
+                    <p class="job__name"> Conbuzznetwork - Infra Engineer</p>
+                    <p class="job__period">  2017 3月   ~   2021 6月 </p>
                 </div>
             </div>
         </div>
-
     </section>
 
 
@@ -107,33 +135,77 @@
     <section id="skills" class="section">
         <div class="section__container">
             <h1>Skills</h1>
-            <h2>Skills & Attributes</h2>
+            <!-- <h2>Skills & Attributes</h2> -->
             <p>
                 <!-- 내가 가진 기술을 무엇이 있고, 팀활동을 잘 적응하며, 새로운것을 배우걸 좋아한다. 등등  -->
-                현재 HTML과 CSS를 자유자재로 다루며, JavaScript로 backend단까지 구상하는데 문제없습니다.
+                <!-- 회사에 기여할 수 있는 부분은 이런것이다. -->
+                <h3><strong>꾸준함과 기본기를 무기로 성장가능성을 키워나가는 개발자</strong></h3> 
+                2일 1커밋과 1일지를 통해 꾸준함과 기본기를 잃지 않으려고 노력하고 있습니다. </p> 이를 통해 누구보다 빠르게 성장할 수 있는 개발자가 되도록 하겠습니다.    </br></br> 
+
+                <h3><strong>문제해결능력을 키워나가는 개발자</strong></h3> 
+                RFC문서를 지속적으로 작성하고 정리를 함으로써 실수를 줄이고 해결능력을 키우기 위해 노력하고 있습니다. </br> 이를통해 누구보다 빠르게 문제를 해결해 나가는 개발자가 되도록 하겠습니다.
+                
             </p>
+            <div class="about__majors">
+                <div class="major">
+                    <div class="major__icon"><i class="fab fa-html5"></i></div>
+                    <h2 class="major__title">HTML</h2>
+                    <div class="major__description">  </div>
+                </div>
+                <div class="major">
+                    <div class="major__icon"><i class="fab fa-css3"></i></div>
+                    <h2 class="major__title">CSS</h2>
+                    <div class="major__description"> </div>
+                </div>
+                <div class="major">
+                    <div class="major__icon"><i class="fab fa-js"></i></div>
+                    <h2 class="major__title">JavaScript</h2>
+                    <div class="major__description"><br></div>
+                </div>
+                <div class="major">
+                    <div class="major__icon"><i class="fab fa-react"></i></div>
+                    <h2 class="major__title">React</h2>
+                    <div class="major__description"> <br></div>
+                </div>
+                <div class="major">
+                    <div class="major__icon"><i class="fab fa-chrome"></i></div>
+                    <h2 class="major__title">Web APIs</h2>
+                    <div class="major__description"> <br></div>
+                </div>
+                <div class="major">
+                    <div class="major__icon"><i class="fab fa-node-js"></i></div>
+                    <h2 class="major__title">NodeJS</h2>
+                    <div class="major__description"> <br></div>
+                </div>
+            </div>
 
             <div class="skillset" >
-                <div class="skillset__left">
-                    <h3 class="skillset__title">Skills</h3>
+                <div class="skillset__left" data-aos="flip-left">
+                    <h2 class="skillset__title"></h2>
 
                     <div class="skill">
                         <div class="skill_description">
                             <span>HTML</span>
-                            <span>99%</span>
+                            <span>65%</span>
                         </div>
                         <div class="skill__bar">
-                            <div class="skill__value" style="width: 99%;"></div>
+                            <div class="skill__value" style="width: 65%;"></div>
+                        </div>
+                        <div class="skill__explanation">
+                            <h5> Wireframe을 통해 전반적인 html 레이아웃을 구성할 수 있으며, HTML구조와 tag들의 사용법과 기본속성에 대해 이해하고 있습니다.   </h5>
                         </div>
                     </div>
 
                     <div class="skill">
                         <div class="skill_description">
                             <span>CSS</span>
-                            <span>97%</span>
+                            <span>50%</span>
                         </div>
                         <div class="skill__bar">
-                            <div class="skill__value" style="width: 97%;"></div>
+                            <div class="skill__value" style="width: 50%;"></div>
+                        </div>
+                        <div class="skill__explanation">
+                            <h5>CSS를 활용하여 layout positioning을 나누고, 반응형을 구현하여 모바일과 웹화면에서도 시각적으로 불편함이 없게 구현할 수 있습니다.  </h5>
                         </div>
                         
 
@@ -141,31 +213,113 @@
 
                     <div class="skill">
                         <div class="skill_description">
-                            <span>JavaScript</span>
-                            <span>95%</span>
+                            <span>React</span>
+                            <span>45%</span>
                         </div>
                         <div class="skill__bar">
-                            <div class="skill__value" style="width: 95%;"></div>
+                            <div class="skill__value" style="width: 45%;"></div>
+                        </div>
+                        <div class="skill__explanation">
+                            <h5>
+                                React.js의 동작 원리를 이해하고 사용법을 익혔습니다. 또한 Functional Component와 Custom Hook에 대한 이해도를 가지고 있습니다. 
+                                그리고 Component 기반의 React 프레임워크를 활용하여 SPA기반의 MovieWeb서비스를 구현해 보았습니다.
+                            </h5>
+                        </div>
+                    </div>
+
+
+
+                    <div class="skill">
+                        <div class="skill_description">
+                            <span>Typescript</span>
+                            <span>30%</span>
+                        </div>
+                        <div class="skill__bar">
+                            <div class="skill__value" style="width: 30%;"></div>
+                        </div>
+                        <div class="skill__explanation">
+                            <h5>  
+                                OOP에 대한 전반적인 이해를 하고 있으며 기본타입들의 사용법을 알고 있습니다.
+                                ReactJS와 typescript를 결합하여 NetFilxWeb서비스를 구현해보았습니다.  
+                            </h5>
+                        </div>
+                    </div>
+
+                    <div class="skill">
+                        <div class="skill_description">
+                            <span>Git&Github</span>
+                            <span>45%</span>
+                        </div>
+                        <div class="skill__bar">
+                            <div class="skill__value" style="width: 45%;"></div>
+                        </div>
+                        <div class="skill__explanation">
+                            <h5> Git-flow에 대한 이해를 가지고 있으며 이를 통해 효과적으로 생산성을 높일 수 있습니다.그리고 대부분의 프로젝트를 github를 통해 소스 코드를 관리하였습니다. 또한 github서버를 활용하여 블로그 및 포트폴리오 사이트를 관리합니다.</h5>
                         </div>
                     </div>
                 </div>
 
-                <div class="skillset__right">
-                    <div class="tools">
-                        <h3 class="skillset__title">Tools</h3>
-                        <ul class="tools__list">
-                            <li><span>Visual Studio Code</span></li>
-                            <li><span>IntelliJ</span></li>
+                <div class="skillset__right" data-aos="flip-right">
+                    <h2 class="skillset__title"></h2>
 
-                        </ul>
+                    <div class="skill">
+                        <div class="skill_description">
+                            <span>JavaScript</span>
+                            <span>51%</span>
+                        </div>
+                        <div class="skill__bar">
+                            <div class="skill__value" style="width: 51%;"></div>
+                        </div>
+                        <div class="skill__explanation">
+                            <h5>javascript에 대한 기본 문법을 익혔으며, Javascript를 숙달시키기 위해 Vanilla JS를 활용하여 프로젝트하였습니다. 그리고 ES6를 익힘으로써 Javascript에 대한 최신 트랜드를 습득하였습니다.
+                                또한 가장 중요하다고 생각하는 개념인 클로저, 프로미스, async~await, 배열메소드를 자유자재로 사용할 수 있도록 연습하고 있습니다.
+                            </h5>
+                        </div>
                     </div>
-                    <div class="etc">
-                        <h3 class="skillset__title">Etc</h3>
-                        <ul class="etc__list">
-                            <li><span>Git&Github</span></li>
-                            <li><span>Packet trace</span></li>
-                            <li><span>Check for vulnerabilities</span></li>
-                        </ul>
+
+                    
+                    <div class="skill">
+                        <div class="skill_description">
+                            <span>WebAPI</span>
+                            <span>51%</span>
+                        </div>
+                        <div class="skill__bar">
+                            <div class="skill__value" style="width: 51%;"></div>
+                        </div>
+                        <div class="skill__explanation">
+                            <h5>
+                                API대한 정의와 종류에 대한 이해를 가지고 있으며, DOM API를 사용하여 웹페이지 요소들을 조작할 수 있습니다.
+                            </h5>
+                        </div>
+                    </div>
+
+                    <div class="skill">
+                        <div class="skill_description">
+                            <span>NodeJS</span>
+                            <span>40%</span>
+                        </div>
+                        <div class="skill__bar">
+                            <div class="skill__value" style="width: 40%;"></div>
+                        </div>
+                        <div class="skill__explanation">
+                            <h5>
+                                Youtube서비스를 구현하면서 전체적으로 백엔드가 어떻게 구성되는지 이해하였으며 express, Router, controller 사용하여 서버구축과 비즈니스로직을 작성해보았습니다.
+                                MongoDB를 사용하여 User Login기능, User Authentication기능들도 구현해보았습니다.
+                            </h5>
+                        </div>
+                    </div>
+
+                    <div class="skill">
+                        <div class="skill_description">
+                            <span>Packet trace</span>
+                            <span>85%</span>
+                        </div>
+                        <div class="skill__bar">
+                            <div class="skill__value" style="width: 85%;"></div>
+                        </div>
+                        <div class="skill__explanation">
+                            <h5>네트워크 상에 흐르는 packet을 dump하여, 분석이 가능하며, Trouble shooting도 가능합니다. </h5>
+                        </div>
                     </div>
                 </div>
             </div>
@@ -180,41 +334,66 @@
             <h3>Projects</h3>
             <div class="work__categories">
                 <button class="category_btn selected" data-fillter="*">All <span class="category__count">6</span></button>
-                <button class="category_btn" data-fillter="html">HTML <span class="category__count">2</span></button>
-                <button class="category_btn" data-fillter="css">CSS <span class="category__count">2</span></button>
-                <button class="category_btn" data-fillter="javascript">JavaScript <span class="category__count">2</span></button>
-                <button class="category_btn" data-fillter="React">React <span class="category__count">1</span></button>
+                <button class="category_btn" data-fillter="html">HTML&CSS<span class="category__count">1</span></button>
+                <!-- <button class="category_btn" data-fillter="css">CSS <span class="category__count">1</span></button> -->
+                <button class="category_btn" data-fillter="javascript">JavaScript <span class="category__count">1</span></button>
+                <button class="category_btn" data-fillter="React">React <span class="category__count">4</span></button>
+                <button class="category_btn" data-fillter="NodeJS">NodeJS <span class="category__count">1</span></button>
             </div>
     
             <div class="work__projects">
-                <a href="https://github.com/LeeJeaWon/youtube" class="project" target="blank" data-type="html">
-                    <img class="project__img" src="imgs/projects/youtube_clone.PNG" alt="Youtube" width="300" height="300">
+                <a href="https://github.com/leejeawon92/kokoa-clone-2020/blob/master/README.md" class="project" target="blank" data-type="html">
+                    <img class="project__img" src="imgs/projects/kakako_clone.PNG" alt="kakako" width="300" height="300">
                     <div class="project__description">
-                        <h3>HTML</h3>
-                        <span>HTML</span>
-                    </div>
-                </a>
-    
-                <a href="https://github.com/LeeJeaWon/youtube" class="project" target="blank" data-type="css">
-                    <img class="project__img" src="imgs/projects/youtube_clone.PNG" alt="Youtube" width="300" height="300">
-                    <div class="project__description">
-                        <h3>CSS</h3>
-                        <span>CSS</span>
-                    </div>
-                </a>
-    
-                <a href="https://github.com/LeeJeaWon/youtube" class="project" target="blank" data-type="javascript">
-                    <img class="project__img" src="imgs/projects/youtube_clone.PNG" alt="Youtube" width="300" height="300">
-                    <div class="project__description">
-                        <h3>JavaScript</h3>
-                        <span>JavaScript</span>
+                        <h3>Kakao Talk Clone</h3>
+                        <span>HTML& CSS</span>
                     </div>
                 </a>
 
-                <a href="https://github.com/LeeJeaWon/youtube" class="project" target="blank" data-type="React">
+                <a href="https://github.com/leejeawon92/momonton/blob/main/README.md" class="project" target="blank" data-type="NodeJS">
+                    <img class="project__img" src="imgs/projects/momonton.PNG" alt="momonton" width="300" height="300">
+                    <div class="project__description">
+                        <h3>Momonton</h3>
+                        <span>javascript</span>
+                    </div>
+                </a>
+
+                <a href="https://github.com/leejeawon92/youtube_clone/blob/main/README.md" class="project" target="blank" data-type="NodeJS">
                     <img class="project__img" src="imgs/projects/youtube_clone.PNG" alt="Youtube" width="300" height="300">
                     <div class="project__description">
-                        <h3>React</h3>
+                        <h3>Youtube Clone</h3>
+                        <span>NodeJS& MongoDB</span>
+                    </div>
+                </a>
+
+                <a href="https://github.com/leejeawon92/movie_app/blob/main/README.md" class="project" target="blank" data-type="React">
+                    <img class="project__img" src="imgs/projects/react_movie_app.PNG" alt="movie_app" width="300" height="300">
+                    <div class="project__description">
+                        <h3>Movie App</h3>
+                        <span>React & movie API</span>
+                    </div>
+                </a>
+
+                <a href="https://github.com/leejeawon92/React_Master/blob/main/kanban/README.md" class="project" target="blank" data-type="React">
+                    <img class="project__img" src="imgs/projects/react_kanban.PNG" alt="Twitter" width="300" height="300">
+                    <div class="project__description">
+                        <h3>Kanban</h3>
+                        <span>React</span>
+                    </div>
+                </a>
+
+                <a href="https://github.com/leejeawon92/React_Master/blob/main/netflixclone/README.md" class="project" target="blank" data-type="React">
+                    <img class="project__img" src="imgs/projects/react_netfilx.PNG" alt="Twitter" width="300" height="300">
+                    <div class="project__description">
+                        <h3>Netfilx Cone</h3>
+                        <span>React</span>
+                    </div>
+                </a>
+
+                <a href="https://github.com/leejeawon92/React_Master/blob/main/coinpaprika/README.md" class="project" target="blank" data-type="React">
+                    <img class="project__img" src="imgs/projects/coinpaprika.PNG" alt="Twitter" width="300" height="300">
+                    <div class="project__description">
+                        <h3>Coinparika</h3>
                         <span>React</span>
                     </div>
                 </a>
@@ -228,11 +407,11 @@
         <h1 class="contact__title">Let's talk</h1>
         <h2 class="contact__email">jeawon33333@gmail.com</h2>
         <div class="contact__links">
-            <a href="https://github.com/LeeJeaWon" target="_blank">
+            <a href="https://github.com/leejeawon92" target="_blank">
                 <i class="fab fa-github"></i>
             </a>
-            <a href="#" target="_blank">
-                <i class="fa fa-linkedin-square"></i>
+            <a href="https://leejeawon92.tistory.com/" target="_blank">
+                <i class="fas fa-blog"></i>
             </a>
         </div>
         <p class="contact__rights">2021 Developer Jea Won</p>
@@ -242,5 +421,7 @@
     <button class="arrow-up">
         <i class="fas fa-arrow-up"></i>
     </button>
+
+    <script> AOS.init(); </script>
 </body>
 </html>
